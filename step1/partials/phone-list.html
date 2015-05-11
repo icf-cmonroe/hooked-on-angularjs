@@ -1,0 +1,13 @@
+<div class="inner">
+	<input id="searcher" ng-model="query" placeholder="Search" />
+	<select id="sorter" ng-model="orderProp">
+		<option value="">Sort By</option>
+		<option value="name">Alphabetical</option>
+		<option value="age">Newest</option>
+	</select>
+	<ul>
+		<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+			<p><a href="#/phones/{{phone.id}}">{{phone.name}}</a> - {{phone.snippet}}</p>
+		</li>
+	</ul>
+</div>

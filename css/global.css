@@ -1,5 +1,14 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;;
+}
+
 html, textarea, input, select {
 	font-family: 'Trebuchet MS', sans-serif;
+	padding: 0.5em;
+	min-height: 33px;
 }
 
 html, body {

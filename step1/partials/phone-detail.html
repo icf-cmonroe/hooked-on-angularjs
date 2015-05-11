@@ -1,0 +1,7 @@
+<div class="inner">
+	<div class="detailed" ng-repeat="phone in phones | filter: { id : phoneId }">
+		<img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}">
+		<h3>{{phone.name}}</h3>
+		<a href="#/phones">Back to Phones</a>
+	</div>
+</div>
