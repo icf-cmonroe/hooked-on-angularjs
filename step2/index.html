@@ -10,6 +10,10 @@
 		<script src="js/controllers.js"></script>
 	</head>
 	<body>
+		<div id="persistent-menu">
+			<button type="button" ng-click="locate()" ng-controller="LocateCtrl">Locate me</button>
+		</div>
+		<googlemap id="map_canvas" latitude="37" longitude="-95" zoom="5"></googlemap>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	</body>
 </html>
